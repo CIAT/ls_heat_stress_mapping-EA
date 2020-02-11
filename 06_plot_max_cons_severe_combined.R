@@ -55,12 +55,12 @@ for (livestock in livestockLS){
     names(plot) <- id_freq
     zvalues <- seq(0,6,1)
     myColorkey <- list(at=zvalues, space = "bottom", height=0.95, width=1.5, labels=list(at=zvalues+0.5, 
-                                                                                         labels=c("< 5 %",
-                                                                                                  "5 - 10 %",
-                                                                                                  "10 - 20 %",
-                                                                                                  "20 - 30 %",
-                                                                                                  "30 - 60 %",
-                                                                                                  "> 60 %"), cex=0.8, fontfamily="serif", font=1))
+                                                                                         labels=c("< 5",
+                                                                                                  "5 - 10",
+                                                                                                  "10 - 20",
+                                                                                                  "20 - 30",
+                                                                                                  "30 - 60",
+                                                                                                  "> 60"), cex=0.8, fontfamily="serif", font=1))
     
     myTheme <- BuRdTheme()
     myTheme$regions$col=colorRampPalette(brewer.pal(5, "Reds"))(length(zvalues)-1)
